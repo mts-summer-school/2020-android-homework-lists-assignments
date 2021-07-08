@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
 	}
 	
 	private fun setupViews() {
-		getMovieAt(0)?.let {
+		getMovieAt(MOVIES_INITIAL_POSITION)?.let {
 			// https://coil-kt.github.io/coil/
 			findViewById<ImageView>(R.id.ivHeader)?.load(it.imageUrl)
 			
 			findViewById<TextView>(R.id.tvTitle)?.text = it.title
 			findViewById<TextView>(R.id.tvDescription)?.text = it.description
 			findViewById<TextView>(R.id.tvRating)?.text = it.rateScore.toString()
-			findViewById<TextView>(R.id.tvAgeRestriction)?.text = it.ageRestriction.toString()
+			findViewById<TextView>(R.id.tvAgeRestriction)?.text = "${it.ageRestriction}+"
 		}
 	}
 	
@@ -45,3 +45,5 @@ class MainActivity : AppCompatActivity() {
 		}
 	}
 }
+
+private const val MOVIES_INITIAL_POSITION = 0
