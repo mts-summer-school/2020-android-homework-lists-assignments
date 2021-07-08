@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_poster_width">216dp</dimen>
+    <dimen name="main_title_top_offset">8dp</dimen>
+    <dimen name="main_description_top_offset">10dp</dimen>
+    <dimen name="main_rating_top_offset">16dp</dimen>
+
+    <dimen name="main_side_offset">10dp</dimen>
+
+    <dimen name="size_movies_list_title">14sp</dimen>
+    <dimen name="size_movies_list_description">12sp</dimen>
+</resources>

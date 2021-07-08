@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/main_side_offset"
+    tools:context=".presentation.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="@dimen/main_poster_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_side_offset"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@tools:sample/avatars"
+        />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_title_top_offset"
+        android:layout_marginStart="@dimen/main_side_offset"
+        android:layout_marginEnd="@dimen/main_side_offset"
+        android:textSize="@dimen/size_movies_list_title"
+        android:textColor="@color/black"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/ivHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/tools_text_movie_title"
+        />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_description_top_offset"
+        android:layout_marginStart="@dimen/main_side_offset"
+        android:layout_marginEnd="@dimen/main_side_offset"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:textSize="@dimen/size_movies_list_description"
+        android:textColor="@color/black"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/tools_text_movie_description"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierDescriptionBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvDescription" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_rating_top_offset"
+        android:layout_marginBottom="@dimen/main_side_offset"
+        android:layout_marginStart="@dimen/main_side_offset"
+        android:layout_marginEnd="@dimen/main_side_offset"
+        android:textSize="@dimen/size_movies_list_description"
+        android:textColor="@color/black"
+        android:text=""
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@+id/barrierDescriptionBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvAgeRestriction"
+        tools:text="@string/tools_text_movie_rating"
+        />
+
+    <TextView
+        android:id="@+id/tvAgeRestriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_rating_top_offset"
+        android:layout_marginBottom="@dimen/main_side_offset"
+        android:layout_marginStart="@dimen/main_side_offset"
+        android:layout_marginEnd="@dimen/main_side_offset"
+        android:textSize="@dimen/size_movies_list_description"
+        android:textColor="@color/black"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/barrierDescriptionBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/tools_text_movie_age_description"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

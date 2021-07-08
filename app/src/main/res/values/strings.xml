@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Movies list</string>
+    <string name="tools_text_movie_title">Фильм-фильм-фильм</string>
+    <string name="tools_text_movie_description">Кстати, многие известные личности освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, подвергнуты целой серии независимых исследований.</string>
+    <string name="tools_text_movie_rating">4</string>
+    <string name="tools_text_movie_age_description">18+</string>
+</resources>
