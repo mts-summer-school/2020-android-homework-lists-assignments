@@ -7,6 +7,9 @@
 
     <dimen name="main_side_offset">10dp</dimen>
 
+    <dimen name="main_age_restriction_stroke_width">1dp</dimen>
+    <dimen name="main_age_restriction_size">40dp</dimen>
+
     <dimen name="size_movies_list_title">14sp</dimen>
     <dimen name="size_movies_list_description">12sp</dimen>
 </resources>
