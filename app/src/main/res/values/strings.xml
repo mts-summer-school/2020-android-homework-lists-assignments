@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Movies list</string>
+
+    <string name="main_rating_text">Рейтинг: %1$d</string>
+    <string name="main_age_restriction_text">%1$d+</string>
+    <string name="main_click_message">Название: %1$s</string>
+    <string name="main_empty_message">Тут должен был быть текст</string>
+
     <string name="tools_text_movie_title">Фильм-фильм-фильм</string>
     <string name="tools_text_movie_description">Кстати, многие известные личности освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, подвергнуты целой серии независимых исследований.</string>
     <string name="tools_text_movie_rating">4</string>
